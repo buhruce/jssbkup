@@ -1,0 +1,17 @@
+stages: 
+  - git
+
+job:
+  stage: git
+  tags:
+    - macos
+  script:
+    - env
+    - git remote set-url origin https://${git_user}:${token}@gitlab.${git_company}.org/${git_user}/jssbkup.git
+    - git config --global user.email "robot@acme.com"
+    - git config --global user.name "Robot"
+    - git checkout -B 'master'
+    - python3 backupjss.py
+    - git add *
+    - git commit -m "[skip-ci]Nightly JSS Back Up" || true
+    - git push origin master
