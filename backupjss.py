@@ -54,8 +54,7 @@ def get_policies():
             auth=(my_login, my_pass),
             headers={"accept": "application/json"},
         )
-        payload = po2.json()
-        payload = str(payload)
+        payload = str(po2.json())
         name = po2.json()["policy"]["general"]["name"]
         name = name.replace(" ", "_").replace("/", "_")
 
