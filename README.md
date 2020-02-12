@@ -1,3 +1,6 @@
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+
 # Jamf Pro Backup
 
 I currently work in an IT shop where many employees of different departments have access to our jamfcloud environment. Jamf tracks modifications to Policies or Configuration Profiles in Settings > System Settings > Change Management Logs. These logs indicate what user made the modification with a timestamp. It does not track specifically what was changed. The purpose of this repo is to create pseudo version control of important features in Jamf Pro.
