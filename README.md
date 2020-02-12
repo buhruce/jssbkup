@@ -13,6 +13,6 @@ I currently work in an IT shop where many employees of different departments hav
 Set Environment Variables
 
 
-## Use
+## Usage
 
 Set schedule in GitLab
